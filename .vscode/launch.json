@@ -1,0 +1,15 @@
+{
+
+    "name": "Python: Terminal (integrated)",
+
+    "type": "python",
+
+    "request": "launch",
+
+    "program": "C:\\Program Files\\Python37\\Lib\\site-packages\\behave\\__main__.py",
+
+    "console": "integratedTerminal",
+
+    "cwd":"${workspaceFolder}\\Drivers_Features"
+
+   }

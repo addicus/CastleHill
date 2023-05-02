@@ -1,0 +1,52 @@
+<testsuite name="login.User information" tests="3" errors="0" failures="0" skipped="0" time="3.426053" timestamp="2023-03-21T22:23:47.037564" hostname="Addicuss"><testcase classname="login.User information" name="User authenticates" status="passed" time="1.689072"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: User authenticates
+    Given User is on login screen ... passed in 0.405s
+    When user enters correct credentials ... passed in 0.173s
+    Then user should be authenticated ... passed in 1.111s
+
+@scenario.end
+--------------------------------------------------------------------------------
+
+Captured stdout:
+User is on login screen
+User enters credentials and submits
+User should be authenticated
+
+]]>
+</system-out></testcase><testcase classname="login.User information" name="User submits blank authentication form" status="passed" time="0.942522"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: User submits blank authentication form
+    Given User is on login screen ... passed in 0.233s
+    When user enters blank credentials ... passed in 0.114s
+    Then user should not be authenticated ... passed in 0.596s
+
+@scenario.end
+--------------------------------------------------------------------------------
+
+Captured stdout:
+User is on login screen
+User enters credentials and submits
+We didn't recognize that email and/or password.Need help?
+
+]]>
+</system-out></testcase><testcase classname="login.User information" name="User fails authentication" status="passed" time="0.794459"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: User fails authentication
+    Given User is on login screen ... passed in 0.085s
+    When user enters incorrect credentials ... passed in 0.159s
+    Then user should not be authenticated ... passed in 0.550s
+
+@scenario.end
+--------------------------------------------------------------------------------
+
+Captured stdout:
+User is on login screen
+User enters credentials and submits
+We didn't recognize that email and/or password.Need help?
+
+]]>
+</system-out></testcase></testsuite>
